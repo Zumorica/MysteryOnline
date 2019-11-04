@@ -6,12 +6,11 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="MysteryOnline.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="MysteryOnline">
+        Title="MysteryOnline"
+        Content="{Binding Content}">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
 </Window>
