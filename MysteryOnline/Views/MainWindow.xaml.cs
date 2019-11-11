@@ -9,6 +9,7 @@ namespace MysteryOnline.Views
         public MainWindow()
         {
             InitializeComponent();
+            ClientSize = new Size(1366d, 768d);
         }
 
         private void InitializeComponent()

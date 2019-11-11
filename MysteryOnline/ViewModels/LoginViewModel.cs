@@ -1,19 +1,21 @@
 using System;
 using System.Reactive;
+using MysteryOnline.Views;
 using ReactiveUI;
+using Serilog.Debugging;
 
 namespace MysteryOnline.ViewModels
 {
     public class LoginViewModel : ViewModelBase
     {
-        public ReactiveCommand<Unit, Unit> Login;
-        
         public LoginViewModel()
         {
-            Login = ReactiveCommand.Create(() =>
-            {
-                Console.WriteLine("login!");
-            });
+
+        }
+
+        public void Login()
+        {
+            ((MainWindow)App.Current.MainWindow).Content = new ChatroomViewModel();
         }
     }
 }
