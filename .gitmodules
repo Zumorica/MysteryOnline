@@ -1,0 +1,3 @@
+[submodule "IrcDotNet"]
+	path = IrcDotNet
+	url = https://github.com/Moe-Team/IrcDotNet.git
